@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		435645511E612741003D89DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435645501E612741003D89DC /* Foundation.framework */; };
 		4356455C1E612741003D89DC /* ChargingBoard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4356455B1E612741003D89DC /* ChargingBoard.mm */; };
+		435645671E612DF6003D89DC /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 435645661E612DF6003D89DC /* libsubstrate.dylib */; };
+		4356456A1E6138BA003D89DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435645691E6138BA003D89DC /* UIKit.framework */; };
+		435645741E614C97003D89DC /* GDLoadingCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4356456D1E6146AD003D89DC /* GDLoadingCircleLayer.m */; };
+		435645751E614C97003D89DC /* GDLoadingFillerLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 435645701E6146AD003D89DC /* GDLoadingFillerLayer.m */; };
+		435645761E614C97003D89DC /* GDLoadingIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 435645731E6146AD003D89DC /* GDLoadingIndicator.m */; };
+		435645781E614CA6003D89DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435645771E614CA6003D89DC /* CoreGraphics.framework */; };
+		4356457A1E614CAC003D89DC /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435645791E614CAC003D89DC /* CoreImage.framework */; };
+		4356457C1E614CBC003D89DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4356457B1E614CBC003D89DC /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,9 +26,23 @@
 		435645561E612741003D89DC /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		435645581E612741003D89DC /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		435645591E612741003D89DC /* ChargingBoard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChargingBoard-Prefix.pch"; sourceTree = "<group>"; };
-		4356455A1E612741003D89DC /* ChargingBoard.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChargingBoard.xm; sourceTree = "<group>"; };
+		4356455A1E612741003D89DC /* ChargingBoard.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc.preprocessed; path = ChargingBoard.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		4356455B1E612741003D89DC /* ChargingBoard.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ChargingBoard.mm; sourceTree = "<group>"; };
 		435645601E612741003D89DC /* ChargingBoard.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ChargingBoard.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/ChargingBoard.plist; sourceTree = "<group>"; };
+		435645661E612DF6003D89DC /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
+		435645681E613220003D89DC /* ChargingBoardHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChargingBoardHeader.h; sourceTree = "<group>"; };
+		435645691E6138BA003D89DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4356456C1E6146AD003D89DC /* GDLoadingCircleLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDLoadingCircleLayer.h; sourceTree = "<group>"; };
+		4356456D1E6146AD003D89DC /* GDLoadingCircleLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDLoadingCircleLayer.m; sourceTree = "<group>"; };
+		4356456E1E6146AD003D89DC /* GDLoadingCircleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDLoadingCircleProtocol.h; sourceTree = "<group>"; };
+		4356456F1E6146AD003D89DC /* GDLoadingFillerLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDLoadingFillerLayer.h; sourceTree = "<group>"; };
+		435645701E6146AD003D89DC /* GDLoadingFillerLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDLoadingFillerLayer.m; sourceTree = "<group>"; };
+		435645711E6146AD003D89DC /* GDLoadingFillerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDLoadingFillerProtocol.h; sourceTree = "<group>"; };
+		435645721E6146AD003D89DC /* GDLoadingIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDLoadingIndicator.h; sourceTree = "<group>"; };
+		435645731E6146AD003D89DC /* GDLoadingIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDLoadingIndicator.m; sourceTree = "<group>"; };
+		435645771E614CA6003D89DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		435645791E614CAC003D89DC /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		4356457B1E614CBC003D89DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +50,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4356457C1E614CBC003D89DC /* QuartzCore.framework in Frameworks */,
+				4356457A1E614CAC003D89DC /* CoreImage.framework in Frameworks */,
+				435645781E614CA6003D89DC /* CoreGraphics.framework in Frameworks */,
+				4356456A1E6138BA003D89DC /* UIKit.framework in Frameworks */,
+				435645671E612DF6003D89DC /* libsubstrate.dylib in Frameworks */,
 				435645511E612741003D89DC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +82,11 @@
 		4356454F1E612741003D89DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4356457B1E614CBC003D89DC /* QuartzCore.framework */,
+				435645791E614CAC003D89DC /* CoreImage.framework */,
+				435645771E614CA6003D89DC /* CoreGraphics.framework */,
+				435645691E6138BA003D89DC /* UIKit.framework */,
+				435645661E612DF6003D89DC /* libsubstrate.dylib */,
 				435645501E612741003D89DC /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -63,10 +95,12 @@
 		435645521E612741003D89DC /* ChargingBoard */ = {
 			isa = PBXGroup;
 			children = (
+				4356456B1E6146AD003D89DC /* GDLoadingIndicator */,
 				4356455A1E612741003D89DC /* ChargingBoard.xm */,
 				4356455B1E612741003D89DC /* ChargingBoard.mm */,
 				435645531E612741003D89DC /* Package */,
 				435645571E612741003D89DC /* Supporting Files */,
+				435645681E613220003D89DC /* ChargingBoardHeader.h */,
 			);
 			path = ChargingBoard;
 			sourceTree = "<group>";
@@ -120,6 +154,21 @@
 				435645601E612741003D89DC /* ChargingBoard.plist */,
 			);
 			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		4356456B1E6146AD003D89DC /* GDLoadingIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				4356456C1E6146AD003D89DC /* GDLoadingCircleLayer.h */,
+				4356456D1E6146AD003D89DC /* GDLoadingCircleLayer.m */,
+				4356456E1E6146AD003D89DC /* GDLoadingCircleProtocol.h */,
+				4356456F1E6146AD003D89DC /* GDLoadingFillerLayer.h */,
+				435645701E6146AD003D89DC /* GDLoadingFillerLayer.m */,
+				435645711E6146AD003D89DC /* GDLoadingFillerProtocol.h */,
+				435645721E6146AD003D89DC /* GDLoadingIndicator.h */,
+				435645731E6146AD003D89DC /* GDLoadingIndicator.m */,
+			);
+			path = GDLoadingIndicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +270,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4356455C1E612741003D89DC /* ChargingBoard.mm in Sources */,
+				435645741E614C97003D89DC /* GDLoadingCircleLayer.m in Sources */,
+				435645751E614C97003D89DC /* GDLoadingFillerLayer.m in Sources */,
+				435645761E614C97003D89DC /* GDLoadingIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +282,9 @@
 		435645611E612741003D89DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(iOSOpenDevPath)/frameworks/**",
@@ -248,7 +302,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -260,7 +314,9 @@
 		435645621E612741003D89DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(iOSOpenDevPath)/frameworks/**",
@@ -271,7 +327,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,14 +346,19 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChargingBoard/ChargingBoard-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
+				iOSOpenDevDevice = 192.168.1.41;
+				iOSOpenDevHasResources = NO;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
-				iOSOpenDevUsePackageVersionPList = YES;
+				iOSOpenDevUsePackageVersionPList = NO;
 			};
 			name = Debug;
 		};
@@ -311,14 +372,19 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChargingBoard/ChargingBoard-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
+				iOSOpenDevDevice = 192.168.1.41;
+				iOSOpenDevHasResources = NO;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
-				iOSOpenDevUsePackageVersionPList = YES;
+				iOSOpenDevUsePackageVersionPList = NO;
 			};
 			name = Release;
 		};
@@ -341,6 +407,7 @@
 				435645651E612741003D89DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
