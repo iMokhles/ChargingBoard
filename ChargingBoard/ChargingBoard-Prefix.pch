@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ChargingBoard' target in the 'ChargingBoard' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

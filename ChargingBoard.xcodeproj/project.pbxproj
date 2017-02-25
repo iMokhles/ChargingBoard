@@ -1,0 +1,348 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		435645511E612741003D89DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 435645501E612741003D89DC /* Foundation.framework */; };
+		4356455C1E612741003D89DC /* ChargingBoard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4356455B1E612741003D89DC /* ChargingBoard.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4356454D1E612741003D89DC /* ChargingBoard.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = ChargingBoard.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		435645501E612741003D89DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		435645551E612741003D89DC /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		435645561E612741003D89DC /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		435645581E612741003D89DC /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		435645591E612741003D89DC /* ChargingBoard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChargingBoard-Prefix.pch"; sourceTree = "<group>"; };
+		4356455A1E612741003D89DC /* ChargingBoard.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = ChargingBoard.xm; sourceTree = "<group>"; };
+		4356455B1E612741003D89DC /* ChargingBoard.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ChargingBoard.mm; sourceTree = "<group>"; };
+		435645601E612741003D89DC /* ChargingBoard.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ChargingBoard.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/ChargingBoard.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		435645491E612741003D89DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435645511E612741003D89DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		435645421E612741003D89DC = {
+			isa = PBXGroup;
+			children = (
+				435645521E612741003D89DC /* ChargingBoard */,
+				4356454F1E612741003D89DC /* Frameworks */,
+				4356454E1E612741003D89DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4356454E1E612741003D89DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4356454D1E612741003D89DC /* ChargingBoard.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4356454F1E612741003D89DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				435645501E612741003D89DC /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		435645521E612741003D89DC /* ChargingBoard */ = {
+			isa = PBXGroup;
+			children = (
+				4356455A1E612741003D89DC /* ChargingBoard.xm */,
+				4356455B1E612741003D89DC /* ChargingBoard.mm */,
+				435645531E612741003D89DC /* Package */,
+				435645571E612741003D89DC /* Supporting Files */,
+			);
+			path = ChargingBoard;
+			sourceTree = "<group>";
+		};
+		435645531E612741003D89DC /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				435645541E612741003D89DC /* DEBIAN */,
+				4356455D1E612741003D89DC /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		435645541E612741003D89DC /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				435645551E612741003D89DC /* control.txt */,
+				435645561E612741003D89DC /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		435645571E612741003D89DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				435645581E612741003D89DC /* PackageVersion.plist */,
+				435645591E612741003D89DC /* ChargingBoard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4356455D1E612741003D89DC /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				4356455E1E612741003D89DC /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		4356455E1E612741003D89DC /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				4356455F1E612741003D89DC /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		4356455F1E612741003D89DC /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				435645601E612741003D89DC /* ChargingBoard.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4356454A1E612741003D89DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4356454C1E612741003D89DC /* ChargingBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 435645631E612741003D89DC /* Build configuration list for PBXNativeTarget "ChargingBoard" */;
+			buildPhases = (
+				435645471E612741003D89DC /* ShellScript */,
+				435645481E612741003D89DC /* Sources */,
+				435645491E612741003D89DC /* Frameworks */,
+				4356454A1E612741003D89DC /* Headers */,
+				4356454B1E612741003D89DC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChargingBoard;
+			productName = ChargingBoard;
+			productReference = 4356454D1E612741003D89DC /* ChargingBoard.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		435645431E612741003D89DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					4356454C1E612741003D89DC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4XPY84P8QQ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 435645461E612741003D89DC /* Build configuration list for PBXProject "ChargingBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 435645421E612741003D89DC;
+			productRefGroup = 4356454E1E612741003D89DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4356454C1E612741003D89DC /* ChargingBoard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		435645471E612741003D89DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		4356454B1E612741003D89DC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		435645481E612741003D89DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4356455C1E612741003D89DC /* ChargingBoard.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		435645611E612741003D89DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		435645621E612741003D89DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		435645641E612741003D89DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 4XPY84P8QQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChargingBoard/ChargingBoard-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		435645651E612741003D89DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 4XPY84P8QQ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChargingBoard/ChargingBoard-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		435645461E612741003D89DC /* Build configuration list for PBXProject "ChargingBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435645611E612741003D89DC /* Debug */,
+				435645621E612741003D89DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		435645631E612741003D89DC /* Build configuration list for PBXNativeTarget "ChargingBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435645641E612741003D89DC /* Debug */,
+				435645651E612741003D89DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 435645431E612741003D89DC /* Project object */;
+}
